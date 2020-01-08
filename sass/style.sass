@@ -1,0 +1,72 @@
+body
+  margin: 0
+  padding: 0
+  width: 100%
+  height: 100vh
+  max-height: 100vh
+  background-color: #EC6527
+  box-sizing: border-box
+  position: relative
+  background-image: url("../img/backgroundDesktop.png")
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  font-family: 'Titillium Web', sans-serif
+
+  @media( max-width:  1024px)
+    background-image: url("../img/backgroundMobile.png")
+    background-repeat: no-repeat
+    background-size: 100%
+    background-position: top
+
+  .wrapper
+    height: 100%
+    max-height: 100vh
+  .header
+    height: 100%
+    width: 29%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    background-color: #fff
+    @media( max-width: 1024px )
+      position: absolute
+      bottom: 8px
+      left: 8px
+      right: 8px
+      width: calc(100% - 16px)
+      height: 536px
+      border-radius: 16px
+    &__logo
+      padding: 56px
+      @media( max-width: 1024px )
+        padding: 40px
+    &__about-me
+      padding: 0 56px
+      @media( max-width: 1024px )
+        padding: 0 40px
+    &__footer
+      margin: 21px 56px 56px 56px
+      padding-top: 21px
+      border-top: 1px solid #C7C7C7
+      font-size: 12px
+      color: #000000
+      @media( max-width: 1024px )
+        margin: 40px
+    &__paragraph
+      line-height: 30px
+      margin: 0
+      font-size: 24px
+    &__paragraph--bold
+      font-weight: bold
+    &__mail
+      text-decoration: none
+      line-height: 30px
+      font-size: 24px
+      color: #EC6527
+  .desktop
+    @media( max-width: 1023px)
+      display: none
+  .mobile
+    @media( min-width: 1023px)
+      display: none
