@@ -37,14 +37,36 @@ body
       width: calc(100% - 16px)
       height: 536px
       border-radius: 16px
+    @media( orientation: landscape) and (max-height: 500px )
+      display: flex
+      flex-wrap: wrap
+      flex-direction: row
+      align-items: space-between
+      top: 8px
+      height: auto
+
     &__logo
       padding: 56px
       @media( max-width: 1024px )
         padding: 40px
+      @media( orientation: landscape) and (max-height: 500px )
+        display: flex
+        flex-basis: 80%
+        height: 60px
+        padding: 40px 0 0 40px
     &__about-me
       padding: 0 56px
       @media( max-width: 1024px )
         padding: 0 40px
+      @media( orientation: landscape)  and (max-height: 500px )
+        flex-basis: 40%
+        margin: 0
+        padding: 0  0 40px 40px
+        padding-right: 0
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        height: auto
     &__footer
       margin: 21px 56px 56px 56px
       padding-top: 21px
@@ -53,6 +75,20 @@ body
       color: #000000
       @media( max-width: 1024px )
         margin: 40px
+      @media( orientation: landscape)  and (max-height: 500px )
+        flex-basis: 40%
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        border: 0
+        margin: 0 40px 40px 0
+        padding: 0
+    &__footer-span
+      margin: 0
+      @media( orientation: landscape) and (max-height: 500px )
+        padding-top: 24px
+        border-top: 1px solid #C7C7C7
+
     &__paragraph
       line-height: 30px
       margin: 0

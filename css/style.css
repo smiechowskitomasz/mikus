@@ -57,6 +57,25 @@ body .header {
   }
 }
 
+@media (orientation: landscape) and (max-height: 500px) {
+  body .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: space-between;
+        -ms-flex-align: space-between;
+            align-items: space-between;
+    top: 8px;
+    height: auto;
+  }
+}
+
 body .header__logo {
   padding: 56px;
 }
@@ -67,6 +86,18 @@ body .header__logo {
   }
 }
 
+@media (orientation: landscape) and (max-height: 500px) {
+  body .header__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+    height: 60px;
+    padding: 40px 0 0 40px;
+  }
+}
+
 body .header__about-me {
   padding: 0 56px;
 }
@@ -74,6 +105,27 @@ body .header__about-me {
 @media (max-width: 1024px) {
   body .header__about-me {
     padding: 0 40px;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  body .header__about-me {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    margin: 0;
+    padding: 0  0 40px 40px;
+    padding-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    height: auto;
   }
 }
 
@@ -88,6 +140,37 @@ body .header__footer {
 @media (max-width: 1024px) {
   body .header__footer {
     margin: 40px;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  body .header__footer {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    border: 0;
+    margin: 0 40px 40px 0;
+    padding: 0;
+  }
+}
+
+body .header__footer-span {
+  margin: 0;
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  body .header__footer-span {
+    padding-top: 24px;
+    border-top: 1px solid #C7C7C7;
   }
 }
 
